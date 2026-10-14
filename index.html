@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Portfolio Management System - Create, manage, and showcase your academic records, projects, technical skills, certifications, and achievements.">
+  <title>Student Portfolio Management System | SPMS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. LANDING PAGE VIEW
+       ========================================================================= -->
+  <div id="view-landing" class="landing-page-view">
+    <!-- Landing Navigation -->
+    <header class="landing-header">
+      <div class="landing-nav-container">
+        <a href="#" class="brand-badge" id="landing-brand-link">
+          <img src="assets/logo.svg" alt="SPMS Logo" class="brand-logo-img">
+          <span class="brand-text">Portfolio<strong>Pulse</strong></span>
+        </a>
+        <nav class="landing-nav-links">
+          <a href="#features" class="landing-nav-link">Features</a>
+          <a href="#about" class="landing-nav-link">About</a>
+          <button class="theme-toggle-btn" id="landing-theme-toggle" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+            <span class="theme-icon-sun">☀️</span>
+            <span class="theme-icon-moon">🌙</span>
+          </button>
+          <button class="btn btn-outline" id="landing-preview-btn">View Sample Portfolio</button>
+          <button class="btn btn-primary" id="landing-get-started-btn">Launch Dashboard</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Landing Hero Section -->
+    <section class="landing-hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Next-Gen Academic & Career Portfolio Platform</span>
+        </div>
+        <h1 class="hero-title">
+          Build Your Future.<br>
+          <span class="gradient-text">Showcase Your Journey.</span>
+        </h1>
+        <p class="hero-subtitle">
+          The ultimate digital portfolio management system designed for ambitious students. Effortlessly track academic excellence, showcase real-world projects, highlight certifications, and generate recruiter-ready portfolios with a single click.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" id="hero-get-started">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Get Started Now
+          </button>
+          <a href="#features" class="btn btn-secondary btn-lg" id="hero-explore-features">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Explore Features
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-num">100%</div>
+            <div class="metric-label">Offline & LocalStorage</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-num">Print-Ready</div>
+            <div class="metric-label">PDF & Resume Export</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-num">Instant</div>
+            <div class="metric-label">Live Showcase Preview</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Landing Features Grid -->
+    <section class="landing-features" id="features">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="section-tag">Powerful Capabilities</span>
+          <h2 class="section-heading">Everything You Need to Shine</h2>
+          <p class="section-desc">Manage every pillar of your academic and engineering career in one centralized, responsive workspace.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feat-academic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 class="feature-title">Academic Records</h3>
+            <p class="feature-text">Keep structured records of semester GPAs, degree progress, institutional honors, and key subject distinctions.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feat-projects">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3 class="feature-title">Project Showcase</h3>
+            <p class="feature-text">Present your software builds, tech stacks, live demonstration links, and GitHub repositories with responsive cards.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feat-skills">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="feature-title">Skills Matrix</h3>
+            <p class="feature-text">Categorize technical frameworks, languages, and soft skills with dynamic proficiency meters and visual badges.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feat-certs">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h3 class="feature-title">Certifications Hub</h3>
+            <p class="feature-text">Store industry certifications, credential IDs, and live verification links from AWS, Google, Meta, and more.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feat-awards">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34c3.48-1.02 6-4.22 6-8.66H4c0 4.44 2.52 7.64 6 8.66z"/></svg>
+            </div>
+            <h3 class="feature-title">Awards & Hackathons</h3>
+            <p class="feature-text">Chronicle hackathon victories, university leadership positions, extracurricular events, and student club activities.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feat-internship">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3 class="feature-title">Internships & Roles</h3>
+            <p class="feature-text">Document company internships, work responsibilities, skills acquired, and verifiable experience timelines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Landing Footer -->
+    <footer class="landing-footer" id="about">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand-badge">
+              <img src="assets/logo.svg" alt="SPMS Logo" class="brand-logo-img">
+              <span class="brand-text">Portfolio<strong>Pulse</strong></span>
+            </div>
+            <p class="footer-tagline">Student Portfolio Management System — Designed for placements, academic evaluations, and professional digital identity.</p>
+          </div>
+          <div class="footer-actions">
+            <button class="btn btn-primary" id="footer-launch-btn">Launch Application</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Student Portfolio Management System. All rights reserved. Built with pure HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- =========================================================================
+       2. MAIN APPLICATION WORKSPACE
+       ========================================================================= -->
+  <div id="view-app" class="app-layout hidden">
+    <!-- Sidebar Backdrop for Mobile -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <!-- Application Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="brand-badge" id="app-logo-home" title="Go to Dashboard">
+          <img src="assets/logo.svg" alt="SPMS Logo" class="brand-logo-img">
+          <div class="brand-details">
+            <span class="brand-title">Portfolio<strong>Pulse</strong></span>
+            <span class="brand-badge-sub">Student Portal</span>
+          </div>
+        </a>
+        <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Close sidebar">✕</button>
+      </div>
+
+      <!-- Quick Student Mini-Profile in Sidebar -->
+      <div class="sidebar-user-card" id="sidebar-user-badge">
+        <div class="sidebar-avatar-wrap">
+          <img src="assets/default-avatar.svg" alt="Avatar" id="sidebar-avatar" class="sidebar-avatar-img">
+          <span class="online-indicator" title="Active"></span>
+        </div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name" id="sidebar-user-name">Alex Rivera</div>
+          <div class="sidebar-user-dept" id="sidebar-user-dept">B.Tech Computer Science</div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="sidebar-nav">
+        <div class="nav-group-title">MAIN MENU</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#dashboard" class="nav-link active" data-target="section-dashboard">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#profile" class="nav-link" data-target="section-profile">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>My Profile</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#academics" class="nav-link" data-target="section-academics">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <span>Academic Records</span>
+              <span class="nav-badge" id="badge-academics-count">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-target="section-projects">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+              <span>Projects</span>
+              <span class="nav-badge" id="badge-projects-count">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-target="section-skills">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>Skills</span>
+              <span class="nav-badge" id="badge-skills-count">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#certifications" class="nav-link" data-target="section-certifications">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span>Certifications</span>
+              <span class="nav-badge" id="badge-certs-count">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#achievements" class="nav-link" data-target="section-achievements">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34c3.48-1.02 6-4.22 6-8.66H4c0 4.44 2.52 7.64 6 8.66z"/></svg>
+              <span>Achievements</span>
+              <span class="nav-badge" id="badge-achievements-count">0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#internships" class="nav-link" data-target="section-internships">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <span>Internships</span>
+              <span class="nav-badge" id="badge-internships-count">0</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-group-title">SHOWCASE & SYSTEM</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#portfolio-preview" class="nav-link highlight-link" data-target="section-portfolio-preview">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>Portfolio Preview</span>
+              <span class="badge-pill-pulse">Live</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#settings" class="nav-link" data-target="section-settings">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <button class="btn btn-ghost btn-block" id="btn-return-landing">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          Return to Landing Page
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Workspace Area -->
+    <div class="main-wrapper">
+      <!-- Top Navigation Bar -->
+      <header class="top-nav">
+        <div class="top-nav-left">
+          <button class="icon-btn mobile-menu-toggle" id="sidebar-toggle-btn" aria-label="Toggle Navigation">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="breadcrumb-container">
+            <span class="breadcrumb-root">PortfolioPulse</span>
+            <span class="breadcrumb-sep">/</span>
+            <h1 class="breadcrumb-current" id="top-nav-title">Dashboard</h1>
+          </div>
+        </div>
+
+        <div class="top-nav-right">
+          <!-- Quick Add Dropdown -->
+          <div class="dropdown-wrapper" id="quick-add-dropdown">
+            <button class="btn btn-primary btn-sm dropdown-trigger" id="quick-add-trigger">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span>+ Add Entry</span>
+            </button>
+            <div class="dropdown-menu" id="quick-add-menu">
+              <button class="dropdown-item" data-action="add-project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                New Project
+              </button>
+              <button class="dropdown-item" data-action="add-academic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
+                New Academic Record
+              </button>
+              <button class="dropdown-item" data-action="add-skill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                New Skill
+              </button>
+              <button class="dropdown-item" data-action="add-cert">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                New Certification
+              </button>
+              <button class="dropdown-item" data-action="add-achievement">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/></svg>
+                New Achievement
+              </button>
+              <button class="dropdown-item" data-action="add-internship">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                New Internship
+              </button>
+            </div>
+          </div>
+
+          <!-- Light/Dark Mode Switcher -->
+          <button class="theme-toggle-btn" id="app-theme-toggle" title="Switch Theme" aria-label="Toggle theme">
+            <span class="theme-icon-sun">☀️</span>
+            <span class="theme-icon-moon">🌙</span>
+          </button>
+
+          <!-- Topbar Profile Button -->
+          <div class="top-nav-user" id="top-nav-profile-btn" title="View Profile">
+            <img src="assets/default-avatar.svg" alt="Profile" id="top-nav-avatar" class="top-nav-avatar-img">
+            <span class="top-nav-username" id="top-nav-username">Alex Rivera</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content Dynamic Sections -->
+      <main class="main-content">
+
+        <!-- ===================================================================
+             SECTION 1: DASHBOARD
+             =================================================================== -->
+        <section id="section-dashboard" class="content-section active">
+          <!-- Hero Banner with Profile Completion -->
+          <div class="dashboard-hero-card">
+            <div class="hero-welcome-text">
+              <div class="badge-status-pill">Academic Year 2024-2025</div>
+              <h2 class="welcome-heading">Welcome back, <span id="dash-student-name">Alex Rivera</span>! 👋</h2>
+              <p class="welcome-subtext" id="dash-student-tagline">
+                Your portfolio is <strong id="dash-completion-text">85% complete</strong>. Keep adding your latest projects and certifications to stand out to campus recruiters.
+              </p>
+              <div class="dash-quick-links">
+                <button class="btn btn-primary btn-sm" id="dash-btn-view-portfolio">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  Preview Public Portfolio
+                </button>
+                <button class="btn btn-secondary btn-sm" id="dash-btn-edit-profile">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                  Update Profile Details
+                </button>
+              </div>
+            </div>
+
+            <!-- Profile Completion Progress Widget -->
+            <div class="completion-widget">
+              <div class="radial-progress-wrap">
+                <svg class="radial-progress-svg" viewBox="0 0 120 120">
+                  <circle class="radial-bg" cx="60" cy="60" r="50" stroke-width="10"></circle>
+                  <circle class="radial-fill" id="dash-radial-fill" cx="60" cy="60" r="50" stroke-width="10" stroke-dasharray="314.159" stroke-dashoffset="47"></circle>
+                </svg>
+                <div class="radial-label">
+                  <span class="radial-val" id="dash-completion-percent">85%</span>
+                  <span class="radial-sub">Complete</span>
+                </div>
+              </div>
+              <div class="completion-checklist" id="dash-completion-tips">
+                <div class="tip-item complete">✓ Basic profile completed</div>
+                <div class="tip-item complete">✓ Academic history logged</div>
+                <div class="tip-item" id="tip-project">✓ 3 projects showcased</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Statistics Metric Cards -->
+          <div class="metrics-grid">
+            <div class="stat-card" data-section="projects">
+              <div class="stat-icon-wrap stat-projects">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-title">Total Projects</span>
+                <h3 class="stat-value" id="stat-projects-count">3</h3>
+                <span class="stat-trend trend-positive">Showcasing tech stack</span>
+              </div>
+            </div>
+
+            <div class="stat-card" data-section="certifications">
+              <div class="stat-icon-wrap stat-certs">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-title">Certifications</span>
+                <h3 class="stat-value" id="stat-certs-count">3</h3>
+                <span class="stat-trend trend-positive">Verified credentials</span>
+              </div>
+            </div>
+
+            <div class="stat-card" data-section="skills">
+              <div class="stat-icon-wrap stat-skills">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-title">Skills Tracked</span>
+                <h3 class="stat-value" id="stat-skills-count">6</h3>
+                <span class="stat-trend trend-neutral">Tech & Soft skills</span>
+              </div>
+            </div>
+
+            <div class="stat-card" data-section="achievements">
+              <div class="stat-icon-wrap stat-awards">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-title">Achievements</span>
+                <h3 class="stat-value" id="stat-achievements-count">2</h3>
+                <span class="stat-trend trend-positive">Awards & Hackathons</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashboard Two-Column Visual Summary -->
+          <div class="dashboard-split-grid">
+            <!-- Left: Featured Projects & Academic Standings -->
+            <div class="dash-column">
+              <div class="panel-card">
+                <div class="panel-header">
+                  <div class="panel-title-wrap">
+                    <h3 class="panel-title">Recent Projects</h3>
+                    <p class="panel-subtitle">Highlighted repositories and builds</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm" id="dash-view-all-projects">View All</button>
+                </div>
+                <div class="dash-projects-list" id="dash-recent-projects">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+
+              <div class="panel-card">
+                <div class="panel-header">
+                  <div class="panel-title-wrap">
+                    <h3 class="panel-title">Academic Snapshot</h3>
+                    <p class="panel-subtitle">Latest grades and progress</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm" id="dash-view-all-academics">Manage</button>
+                </div>
+                <div class="dash-academic-summary" id="dash-academic-list">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Activity Log & Quick Add Panel -->
+            <div class="dash-column">
+              <!-- Quick Action Shortcuts -->
+              <div class="panel-card">
+                <div class="panel-header">
+                  <h3 class="panel-title">Quick Actions</h3>
+                </div>
+                <div class="quick-actions-grid">
+                  <button class="quick-action-btn" id="qa-add-project">
+                    <div class="qa-icon" style="background:#e0e7ff; color:#4338ca;">🚀</div>
+                    <span>Add Project</span>
+                  </button>
+                  <button class="quick-action-btn" id="qa-add-academic">
+                    <div class="qa-icon" style="background:#ecfdf5; color:#047857;">🎓</div>
+                    <span>Add Academic</span>
+                  </button>
+                  <button class="quick-action-btn" id="qa-add-cert">
+                    <div class="qa-icon" style="background:#fef3c7; color:#b45309;">📜</div>
+                    <span>Add Certificate</span>
+                  </button>
+                  <button class="quick-action-btn" id="qa-add-skill">
+                    <div class="qa-icon" style="background:#f3e8ff; color:#7e22ce;">⭐</div>
+                    <span>Add Skill</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Recent Activity Timeline -->
+              <div class="panel-card">
+                <div class="panel-header">
+                  <div class="panel-title-wrap">
+                    <h3 class="panel-title">Recent Portfolio Activity</h3>
+                    <p class="panel-subtitle">Track your modifications & updates</p>
+                  </div>
+                  <button class="btn btn-ghost btn-xs" id="clear-activity-log-btn" title="Clear history">Clear</button>
+                </div>
+                <div class="activity-timeline" id="dash-activity-timeline">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 2: STUDENT PROFILE MANAGEMENT
+             =================================================================== -->
+        <section id="section-profile" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Student Profile</h2>
+              <p class="section-main-desc">Manage your personal information, university credentials, profile photo, and public social presence.</p>
+            </div>
+          </div>
+
+          <div class="profile-layout-grid">
+            <!-- Profile Card & Photo Preview -->
+            <div class="profile-card-col">
+              <div class="panel-card profile-preview-card">
+                <div class="profile-avatar-container">
+                  <img src="assets/default-avatar.svg" alt="Profile" id="profile-display-avatar" class="profile-large-avatar">
+                  <label for="profile-avatar-file-input" class="avatar-upload-overlay" title="Upload new photo">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span>Change Photo</span>
+                  </label>
+                  <input type="file" id="profile-avatar-file-input" accept="image/*" class="visually-hidden">
+                </div>
+
+                <h3 class="profile-preview-name" id="profile-preview-name">Alex Rivera</h3>
+                <p class="profile-preview-role" id="profile-preview-role">Computer Science Engineering</p>
+                <div class="badge-status-pill mt-2" id="profile-preview-id">ID: STU-2024-CS0842</div>
+
+                <div class="profile-social-strip mt-4">
+                  <a href="#" id="preview-social-linkedin" target="_blank" class="social-btn" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </a>
+                  <a href="#" id="preview-social-github" target="_blank" class="social-btn" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" id="preview-social-website" target="_blank" class="social-btn" title="Personal Website">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </a>
+                </div>
+
+                <div class="profile-quick-contact mt-4">
+                  <div class="contact-line">
+                    <span class="contact-icon">📧</span>
+                    <span id="preview-text-email">alex.rivera@apex.edu</span>
+                  </div>
+                  <div class="contact-line">
+                    <span class="contact-icon">📱</span>
+                    <span id="preview-text-phone">+1 (555) 234-8901</span>
+                  </div>
+                  <div class="contact-line">
+                    <span class="contact-icon">🏛️</span>
+                    <span id="preview-text-college">Apex Institute of Technology</span>
+                  </div>
+                </div>
+
+                <button class="btn btn-ghost btn-sm mt-3" id="btn-reset-avatar">Reset to Default Avatar</button>
+              </div>
+            </div>
+
+            <!-- Profile Edit Form -->
+            <div class="profile-form-col">
+              <div class="panel-card">
+                <div class="panel-header">
+                  <h3 class="panel-title">Edit Personal & Academic Details</h3>
+                </div>
+
+                <form id="form-student-profile" class="form-grid">
+                  <!-- Row 1 -->
+                  <div class="form-group col-span-6">
+                    <label for="prof-fullname" class="form-label required">Full Name</label>
+                    <input type="text" id="prof-fullname" class="form-control" placeholder="e.g. Alex Rivera" required>
+                    <span class="form-hint-error" id="err-prof-fullname"></span>
+                  </div>
+
+                  <div class="form-group col-span-6">
+                    <label for="prof-studentid" class="form-label required">Student ID / Reg. No.</label>
+                    <input type="text" id="prof-studentid" class="form-control" placeholder="e.g. STU-2024-CS0842" required>
+                    <span class="form-hint-error" id="err-prof-studentid"></span>
+                  </div>
+
+                  <!-- Row 2 -->
+                  <div class="form-group col-span-6">
+                    <label for="prof-college" class="form-label required">College / University Name</label>
+                    <input type="text" id="prof-college" class="form-control" placeholder="e.g. Apex Institute of Technology & Sciences" required>
+                    <span class="form-hint-error" id="err-prof-college"></span>
+                  </div>
+
+                  <div class="form-group col-span-6">
+                    <label for="prof-department" class="form-label required">Department & Course</label>
+                    <input type="text" id="prof-department" class="form-control" placeholder="e.g. Computer Science & Engineering (B.Tech)" required>
+                    <span class="form-hint-error" id="err-prof-department"></span>
+                  </div>
+
+                  <!-- Row 3 -->
+                  <div class="form-group col-span-4">
+                    <label for="prof-year" class="form-label required">Year / Semester of Study</label>
+                    <input type="text" id="prof-year" class="form-control" placeholder="e.g. 3rd Year (6th Sem)" required>
+                    <span class="form-hint-error" id="err-prof-year"></span>
+                  </div>
+
+                  <div class="form-group col-span-4">
+                    <label for="prof-email" class="form-label required">Email Address</label>
+                    <input type="email" id="prof-email" class="form-control" placeholder="e.g. alex@university.edu" required>
+                    <span class="form-hint-error" id="err-prof-email"></span>
+                  </div>
+
+                  <div class="form-group col-span-4">
+                    <label for="prof-phone" class="form-label required">Phone Number</label>
+                    <input type="tel" id="prof-phone" class="form-control" placeholder="e.g. +1 555-019-2831" required>
+                    <span class="form-hint-error" id="err-prof-phone"></span>
+                  </div>
+
+                  <!-- Row 4: Bio -->
+                  <div class="form-group col-span-12">
+                    <label for="prof-bio" class="form-label required">Career Objective / Bio</label>
+                    <textarea id="prof-bio" class="form-control" rows="3" placeholder="Write a brief professional summary about your aspirations, focus areas, and strengths..." required></textarea>
+                    <span class="form-hint-error" id="err-prof-bio"></span>
+                  </div>
+
+                  <!-- Row 5: Social Links -->
+                  <div class="form-group col-span-4">
+                    <label for="prof-linkedin" class="form-label">LinkedIn Profile URL</label>
+                    <input type="url" id="prof-linkedin" class="form-control" placeholder="https://linkedin.com/in/username">
+                    <span class="form-hint-error" id="err-prof-linkedin"></span>
+                  </div>
+
+                  <div class="form-group col-span-4">
+                    <label for="prof-github" class="form-label">GitHub Profile URL</label>
+                    <input type="url" id="prof-github" class="form-control" placeholder="https://github.com/username">
+                    <span class="form-hint-error" id="err-prof-github"></span>
+                  </div>
+
+                  <div class="form-group col-span-4">
+                    <label for="prof-website" class="form-label">Portfolio / Personal Website</label>
+                    <input type="url" id="prof-website" class="form-control" placeholder="https://yourname.dev">
+                    <span class="form-hint-error" id="err-prof-website"></span>
+                  </div>
+
+                  <div class="form-actions col-span-12">
+                    <button type="submit" class="btn btn-primary" id="btn-save-profile">
+                      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                      Save Profile Changes
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="btn-discard-profile">Discard Changes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 3: ACADEMIC RECORDS
+             =================================================================== -->
+        <section id="section-academics" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Academic Records</h2>
+              <p class="section-main-desc">Track your degrees, semesters, GPA, percentages, and institutional honors.</p>
+            </div>
+            <button class="btn btn-primary" id="btn-open-academic-modal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Add Academic Record
+            </button>
+          </div>
+
+          <!-- Academic Records Stats Strip -->
+          <div class="summary-pill-bar">
+            <div class="pill-stat">
+              <span class="pill-stat-title">Current Degree</span>
+              <span class="pill-stat-val" id="acad-current-degree">B.Tech (CSE)</span>
+            </div>
+            <div class="pill-stat">
+              <span class="pill-stat-title">Overall CGPA / Standing</span>
+              <span class="pill-stat-val" id="acad-avg-gpa">9.24 / 10.0</span>
+            </div>
+            <div class="pill-stat">
+              <span class="pill-stat-title">Entries Logged</span>
+              <span class="pill-stat-val" id="acad-total-entries">3 Records</span>
+            </div>
+          </div>
+
+          <!-- Grid of Academic Cards -->
+          <div class="academics-grid" id="academics-container">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 4: PROJECTS MANAGEMENT
+             =================================================================== -->
+        <section id="section-projects" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Projects Management</h2>
+              <p class="section-main-desc">Showcase software builds, engineering applications, live deployments, and source code repositories.</p>
+            </div>
+            <button class="btn btn-primary" id="btn-open-project-modal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Add Project
+            </button>
+          </div>
+
+          <!-- Search & Filter Controls -->
+          <div class="filters-toolbar">
+            <div class="search-input-wrap">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="project-search-input" class="search-field" placeholder="Search by project title, tech stack, or description...">
+            </div>
+            <div class="filters-group">
+              <select id="project-category-filter" class="filter-select">
+                <option value="all">All Categories</option>
+                <option value="Web Application">Web Application</option>
+                <option value="Healthcare Tech">Healthcare Tech</option>
+                <option value="Developer Tools">Developer Tools</option>
+                <option value="Mobile App">Mobile App</option>
+                <option value="AI / ML">AI / ML</option>
+                <option value="Other">Other</option>
+              </select>
+              <select id="project-status-filter" class="filter-select">
+                <option value="all">All Statuses</option>
+                <option value="Completed">Completed</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Planned">Planned</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid" id="projects-container">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 5: SKILLS MANAGEMENT
+             =================================================================== -->
+        <section id="section-skills" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Skills Management</h2>
+              <p class="section-main-desc">Organize your technical competencies and soft skills with proficiency ratings and categorizations.</p>
+            </div>
+            <button class="btn btn-primary" id="btn-open-skill-modal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Add Skill
+            </button>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="pill-tabs-bar" id="skill-category-tabs">
+            <button class="pill-tab active" data-category="all">All Skills</button>
+            <button class="pill-tab" data-category="Frontend">Frontend</button>
+            <button class="pill-tab" data-category="Programming Languages">Languages</button>
+            <button class="pill-tab" data-category="Tools & DevOps">Tools &amp; DevOps</button>
+            <button class="pill-tab" data-category="Database & Cloud">Database &amp; Cloud</button>
+            <button class="pill-tab" data-category="Soft Skills">Soft Skills</button>
+          </div>
+
+          <!-- Skills Cards Container -->
+          <div class="skills-grid" id="skills-container">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 6: CERTIFICATIONS MANAGEMENT
+             =================================================================== -->
+        <section id="section-certifications" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Certifications Management</h2>
+              <p class="section-main-desc">Manage verified vendor badges, professional certifications, exam credentials, and online credentials.</p>
+            </div>
+            <button class="btn btn-primary" id="btn-open-cert-modal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Add Certification
+            </button>
+          </div>
+
+          <!-- Certifications Grid -->
+          <div class="certifications-grid" id="certifications-container">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 7: ACHIEVEMENTS & EXTRACURRICULAR
+             =================================================================== -->
+        <section id="section-achievements" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Achievements & Activities</h2>
+              <p class="section-main-desc">Record awards, hackathons, seminars, student leadership, athletics, and community contributions.</p>
+            </div>
+            <button class="btn btn-primary" id="btn-open-achievement-modal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Add Achievement
+            </button>
+          </div>
+
+          <!-- Filter Category -->
+          <div class="filters-toolbar">
+            <div class="pill-tabs-bar" id="achievement-category-tabs">
+              <button class="pill-tab active" data-category="all">All</button>
+              <button class="pill-tab" data-category="Hackathons">Hackathons</button>
+              <button class="pill-tab" data-category="Academic Awards">Academic Awards</button>
+              <button class="pill-tab" data-category="Leadership">Leadership</button>
+              <button class="pill-tab" data-category="Workshops">Workshops</button>
+              <button class="pill-tab" data-category="Volunteering">Volunteering</button>
+            </div>
+          </div>
+
+          <!-- Achievements Grid -->
+          <div class="achievements-grid" id="achievements-container">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 8: INTERNSHIPS & EXPERIENCE
+             =================================================================== -->
+        <section id="section-internships" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">Internships & Work Experience</h2>
+              <p class="section-main-desc">Chronicle your industrial training, apprenticeships, part-time jobs, and work accomplishments.</p>
+            </div>
+            <button class="btn btn-primary" id="btn-open-internship-modal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              + Add Internship
+            </button>
+          </div>
+
+          <!-- Timeline Container -->
+          <div class="experience-timeline" id="internships-container">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 9: PORTFOLIO PREVIEW & PRINT
+             =================================================================== -->
+        <section id="section-portfolio-preview" class="content-section">
+          <!-- Control Bar (hidden during printing) -->
+          <div class="preview-controls-bar">
+            <div class="preview-controls-info">
+              <span class="preview-badge">Recruiter Showcase Mode</span>
+              <h2 class="preview-title">Student Portfolio Preview</h2>
+              <p class="preview-desc">This is how recruiters, professors, and peers view your complete digital portfolio.</p>
+            </div>
+            <div class="preview-actions">
+              <button class="btn btn-primary" id="btn-print-portfolio">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                Print / Save as PDF
+              </button>
+              <button class="btn btn-secondary" id="btn-copy-preview-link">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy Share Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Renderable Portfolio Document (styled for screen & print) -->
+          <article class="portfolio-document" id="portfolio-printable-doc">
+            <!-- Header Banner -->
+            <header class="doc-header">
+              <div class="doc-header-glow"></div>
+              <div class="doc-header-main">
+                <div class="doc-avatar-wrap">
+                  <img src="assets/default-avatar.svg" alt="Alex Rivera" id="doc-avatar" class="doc-avatar-img">
+                </div>
+                <div class="doc-profile-text">
+                  <h1 class="doc-name" id="doc-fullname">Alexandria Rivera</h1>
+                  <p class="doc-role" id="doc-dept-degree">Computer Science & Engineering (B.Tech)</p>
+                  <p class="doc-college" id="doc-college-year">Apex Institute of Technology & Sciences · 3rd Year</p>
+                  
+                  <div class="doc-contact-row">
+                    <span class="doc-contact-item" id="doc-email-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      <span id="doc-email">alex.rivera@apex.edu</span>
+                    </span>
+                    <span class="doc-contact-item" id="doc-phone-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      <span id="doc-phone">+1 (555) 234-8901</span>
+                    </span>
+                    <span class="doc-contact-item" id="doc-regno-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+                      <span id="doc-regno">ID: STU-2024-CS0842</span>
+                    </span>
+                  </div>
+
+                  <div class="doc-social-row">
+                    <a href="#" id="doc-link-linkedin" target="_blank" class="doc-link-pill">LinkedIn Profile</a>
+                    <a href="#" id="doc-link-github" target="_blank" class="doc-link-pill">GitHub Repository</a>
+                    <a href="#" id="doc-link-website" target="_blank" class="doc-link-pill">Personal Website</a>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <!-- Career Objective / Bio -->
+            <section class="doc-section">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">01</span>
+                Career Objective & Biography
+              </h3>
+              <p class="doc-bio-content" id="doc-bio">
+                Aspiring Full-Stack Software Engineer & Cloud Enthusiast passionate about building scalable web applications, accessible design systems, and intelligent automation tools.
+              </p>
+            </section>
+
+            <!-- Education / Academics -->
+            <section class="doc-section">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">02</span>
+                Academic Qualifications
+              </h3>
+              <div class="doc-education-list" id="doc-academics-list">
+                <!-- Rendered by JS -->
+              </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="doc-section">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">03</span>
+                Technical & Professional Skills
+              </h3>
+              <div class="doc-skills-matrix" id="doc-skills-list">
+                <!-- Rendered by JS -->
+              </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="doc-section">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">04</span>
+                Featured Engineering Projects
+              </h3>
+              <div class="doc-projects-grid" id="doc-projects-list">
+                <!-- Rendered by JS -->
+              </div>
+            </section>
+
+            <!-- Experience / Internships -->
+            <section class="doc-section" id="doc-experience-wrapper">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">05</span>
+                Internship & Work Experience
+              </h3>
+              <div class="doc-internships-list" id="doc-internships-list">
+                <!-- Rendered by JS -->
+              </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="doc-section" id="doc-certs-wrapper">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">06</span>
+                Licenses & Certifications
+              </h3>
+              <div class="doc-certs-grid" id="doc-certs-list">
+                <!-- Rendered by JS -->
+              </div>
+            </section>
+
+            <!-- Achievements -->
+            <section class="doc-section" id="doc-achievements-wrapper">
+              <h3 class="doc-section-title">
+                <span class="doc-section-num">07</span>
+                Honors & Extracurricular Achievements
+              </h3>
+              <div class="doc-achievements-list" id="doc-achievements-list">
+                <!-- Rendered by JS -->
+              </div>
+            </section>
+
+            <footer class="doc-footer">
+              <p>Generated via Student Portfolio Management System · Confidential Student Portfolio Document</p>
+            </footer>
+          </article>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 10: SETTINGS
+             =================================================================== -->
+        <section id="section-settings" class="content-section">
+          <div class="section-title-bar">
+            <div>
+              <h2 class="section-main-heading">System Settings</h2>
+              <p class="section-main-desc">Manage theme preferences, export / backup your student portfolio, and reset sample data.</p>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            <!-- Appearance Settings -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h3 class="panel-title">Appearance & Theme</h3>
+              </div>
+              <div class="setting-row">
+                <div class="setting-info">
+                  <div class="setting-title">Color Scheme</div>
+                  <div class="setting-desc">Switch between professional light mode and dark mode.</div>
+                </div>
+                <div class="theme-switch-group">
+                  <button class="btn btn-outline btn-sm" id="btn-theme-light">☀️ Light</button>
+                  <button class="btn btn-outline btn-sm" id="btn-theme-dark">🌙 Dark</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Backup & Portability -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h3 class="panel-title">Data Backup & Portability</h3>
+              </div>
+              <div class="setting-row">
+                <div class="setting-info">
+                  <div class="setting-title">Export Portfolio Data (JSON)</div>
+                  <div class="setting-desc">Download a complete JSON file containing all student data, projects, and records.</div>
+                </div>
+                <button class="btn btn-primary btn-sm" id="btn-export-json">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Export JSON
+                </button>
+              </div>
+
+              <div class="setting-row">
+                <div class="setting-info">
+                  <div class="setting-title">Import Portfolio Data (JSON)</div>
+                  <div class="setting-desc">Restore your portfolio records from an exported JSON file backup.</div>
+                </div>
+                <div>
+                  <label for="import-json-file" class="btn btn-secondary btn-sm" style="cursor:pointer;">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    Import JSON
+                  </label>
+                  <input type="file" id="import-json-file" accept=".json" class="visually-hidden">
+                </div>
+              </div>
+            </div>
+
+            <!-- Danger Zone / Reset -->
+            <div class="panel-card danger-zone-card">
+              <div class="panel-header">
+                <h3 class="panel-title text-danger">Data Management & Reset</h3>
+              </div>
+              
+              <div class="setting-row">
+                <div class="setting-info">
+                  <div class="setting-title">Reset to Default Sample Data</div>
+                  <div class="setting-desc">Restores the pre-loaded fictional student records, sample projects, and achievements.</div>
+                </div>
+                <button class="btn btn-warning btn-sm" id="btn-reset-demo-data">
+                  Reset Sample Data
+                </button>
+              </div>
+
+              <div class="setting-row">
+                <div class="setting-info">
+                  <div class="setting-title text-danger">Clear All Records</div>
+                  <div class="setting-desc">Wipes all LocalStorage data, allowing you to start completely from scratch.</div>
+                </div>
+                <button class="btn btn-danger btn-sm" id="btn-clear-all-data">
+                  Clear All Data
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. MODALS CONTAINER
+       ========================================================================= -->
+
+  <!-- Academic Modal (Add / Edit) -->
+  <div class="modal-backdrop" id="modal-academic" role="dialog" aria-modal="true" aria-labelledby="modal-academic-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-academic-title">Add Academic Record</h3>
+        <button class="modal-close-btn" data-close-modal="modal-academic" aria-label="Close">✕</button>
+      </div>
+      <form id="form-academic">
+        <input type="hidden" id="acad-edit-id">
+        <div class="modal-body form-grid">
+          <div class="form-group col-span-12">
+            <label for="acad-degree" class="form-label required">Degree / Course Name</label>
+            <input type="text" id="acad-degree" class="form-control" placeholder="e.g. B.Tech Computer Science & Engineering" required>
+            <span class="form-hint-error" id="err-acad-degree"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="acad-institution" class="form-label required">Institution / College / School</label>
+            <input type="text" id="acad-institution" class="form-control" placeholder="e.g. Apex Institute of Technology & Sciences" required>
+            <span class="form-hint-error" id="err-acad-institution"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="acad-year" class="form-label required">Academic Year / Duration</label>
+            <input type="text" id="acad-year" class="form-control" placeholder="e.g. 2022 - 2026" required>
+            <span class="form-hint-error" id="err-acad-year"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="acad-semester" class="form-label required">Semester / Standard</label>
+            <input type="text" id="acad-semester" class="form-control" placeholder="e.g. Semester 5 or Class XII" required>
+            <span class="form-hint-error" id="err-acad-semester"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="acad-score" class="form-label required">CGPA or Percentage</label>
+            <input type="text" id="acad-score" class="form-control" placeholder="e.g. 9.24 / 10.0 or 95.8%" required>
+            <span class="form-hint-error" id="err-acad-score"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="acad-scale" class="form-label">Grading Scale</label>
+            <select id="acad-scale" class="form-control">
+              <option value="CGPA (10.0 Scale)">CGPA (10.0 Scale)</option>
+              <option value="GPA (4.0 Scale)">GPA (4.0 Scale)</option>
+              <option value="Percentage (%)">Percentage (%)</option>
+              <option value="Letter Grade">Letter Grade</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="acad-achievements" class="form-label">Academic Honors / Achievements</label>
+            <textarea id="acad-achievements" class="form-control" rows="2" placeholder="e.g. Dean's Honor List, Specialization in Cloud Computing, Subject Topper..."></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="modal-academic">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-academic">Save Academic Record</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Project Modal (Add / Edit) -->
+  <div class="modal-backdrop" id="modal-project" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-project-title">Add New Project</h3>
+        <button class="modal-close-btn" data-close-modal="modal-project" aria-label="Close">✕</button>
+      </div>
+      <form id="form-project">
+        <input type="hidden" id="proj-edit-id">
+        <div class="modal-body form-grid">
+          <div class="form-group col-span-8">
+            <label for="proj-title" class="form-label required">Project Title</label>
+            <input type="text" id="proj-title" class="form-control" placeholder="e.g. EcoRoute: AI Green Mobility Planner" required>
+            <span class="form-hint-error" id="err-proj-title"></span>
+          </div>
+
+          <div class="form-group col-span-4">
+            <label for="proj-category" class="form-label required">Category</label>
+            <select id="proj-category" class="form-control" required>
+              <option value="Web Application">Web Application</option>
+              <option value="Healthcare Tech">Healthcare Tech</option>
+              <option value="Developer Tools">Developer Tools</option>
+              <option value="Mobile App">Mobile App</option>
+              <option value="AI / ML">AI / ML</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="proj-description" class="form-label required">Project Description</label>
+            <textarea id="proj-description" class="form-control" rows="3" placeholder="Explain the problem solved, architecture, and key outcomes..." required></textarea>
+            <span class="form-hint-error" id="err-proj-description"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="proj-tech" class="form-label required">Technologies Used (comma separated)</label>
+            <input type="text" id="proj-tech" class="form-control" placeholder="e.g. HTML5, CSS3, JavaScript, Mapbox API" required>
+            <span class="form-hint-error" id="err-proj-tech"></span>
+          </div>
+
+          <div class="form-group col-span-4">
+            <label for="proj-start-date" class="form-label required">Start Date</label>
+            <input type="date" id="proj-start-date" class="form-control" required>
+          </div>
+
+          <div class="form-group col-span-4">
+            <label for="proj-end-date" class="form-label">Completion Date</label>
+            <input type="date" id="proj-end-date" class="form-control">
+          </div>
+
+          <div class="form-group col-span-4">
+            <label for="proj-status" class="form-label required">Project Status</label>
+            <select id="proj-status" class="form-control" required>
+              <option value="Completed">Completed</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Planned">Planned</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="proj-github" class="form-label">GitHub Repository URL</label>
+            <input type="url" id="proj-github" class="form-control" placeholder="https://github.com/username/project">
+            <span class="form-hint-error" id="err-proj-github"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="proj-live" class="form-label">Live Demo URL</label>
+            <input type="url" id="proj-live" class="form-control" placeholder="https://demo-app.example.com">
+            <span class="form-hint-error" id="err-proj-live"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="proj-image-url" class="form-label">Project Image / Thumbnail URL (or leave empty for default badge)</label>
+            <input type="text" id="proj-image-url" class="form-control" placeholder="assets/project-ecoroute.svg or https://images.unsplash.com/...">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="modal-project">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-project">Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="modal-project-details" role="dialog" aria-modal="true" aria-labelledby="detail-proj-title">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <h3 class="modal-title" id="detail-proj-title">Project Details</h3>
+        <button class="modal-close-btn" data-close-modal="modal-project-details" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="detail-banner" id="detail-proj-img-wrap">
+          <img src="assets/project-ecoroute.svg" alt="Project Thumbnail" id="detail-proj-img" class="detail-banner-img">
+        </div>
+        <div class="detail-header-info mt-3">
+          <div class="detail-tags-row">
+            <span class="badge-status-pill" id="detail-proj-cat">Web Application</span>
+            <span class="badge-status-pill badge-pill-green" id="detail-proj-status">Completed</span>
+          </div>
+          <h2 class="detail-heading" id="detail-proj-heading">EcoRoute: AI Green Mobility Planner</h2>
+          <div class="detail-date" id="detail-proj-timeline">Jan 2024 - Apr 2024</div>
+        </div>
+        <div class="detail-body-text mt-3">
+          <h4 class="detail-subheading">About the Project</h4>
+          <p id="detail-proj-desc"></p>
+        </div>
+        <div class="detail-tech-stack mt-3">
+          <h4 class="detail-subheading">Technologies Used</h4>
+          <div class="tags-container" id="detail-proj-techs"></div>
+        </div>
+        <div class="detail-links mt-4" id="detail-proj-links">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal="modal-project-details">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skill Modal (Add / Edit) -->
+  <div class="modal-backdrop" id="modal-skill" role="dialog" aria-modal="true" aria-labelledby="modal-skill-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-skill-title">Add New Skill</h3>
+        <button class="modal-close-btn" data-close-modal="modal-skill" aria-label="Close">✕</button>
+      </div>
+      <form id="form-skill">
+        <input type="hidden" id="skill-edit-id">
+        <div class="modal-body form-grid">
+          <div class="form-group col-span-12">
+            <label for="skill-name" class="form-label required">Skill Name</label>
+            <input type="text" id="skill-name" class="form-control" placeholder="e.g. JavaScript (ES6+), Python, Leadership" required>
+            <span class="form-hint-error" id="err-skill-name"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="skill-category" class="form-label required">Category</label>
+            <select id="skill-category" class="form-control" required>
+              <option value="Frontend">Frontend</option>
+              <option value="Programming Languages">Programming Languages</option>
+              <option value="Backend">Backend</option>
+              <option value="Database & Cloud">Database & Cloud</option>
+              <option value="Tools & DevOps">Tools & DevOps</option>
+              <option value="Soft Skills">Soft Skills</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="skill-level" class="form-label required">Proficiency Level</label>
+            <select id="skill-level" class="form-control" required>
+              <option value="Beginner">Beginner (35%)</option>
+              <option value="Intermediate">Intermediate (60%)</option>
+              <option value="Advanced" selected>Advanced (85%)</option>
+              <option value="Expert">Expert (95%)</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="skill-percentage" class="form-label">Proficiency Percentage (20% - 100%)</label>
+            <div class="range-slider-wrapper">
+              <input type="range" id="skill-percentage" min="20" max="100" value="85" class="range-slider">
+              <span class="range-val" id="skill-percentage-val">85%</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="modal-skill">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-skill">Save Skill</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Certification Modal (Add / Edit) -->
+  <div class="modal-backdrop" id="modal-cert" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-cert-title">Add Certification</h3>
+        <button class="modal-close-btn" data-close-modal="modal-cert" aria-label="Close">✕</button>
+      </div>
+      <form id="form-cert">
+        <input type="hidden" id="cert-edit-id">
+        <div class="modal-body form-grid">
+          <div class="form-group col-span-12">
+            <label for="cert-name" class="form-label required">Certification Name</label>
+            <input type="text" id="cert-name" class="form-control" placeholder="e.g. Meta Front-End Developer Professional Certificate" required>
+            <span class="form-hint-error" id="err-cert-name"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="cert-issuer" class="form-label required">Issuing Organization</label>
+            <input type="text" id="cert-issuer" class="form-control" placeholder="e.g. Meta / Coursera, AWS, Google Cloud" required>
+            <span class="form-hint-error" id="err-cert-issuer"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="cert-issue-date" class="form-label required">Issue Date</label>
+            <input type="date" id="cert-issue-date" class="form-control" required>
+            <span class="form-hint-error" id="err-cert-issue-date"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="cert-expiry-date" class="form-label">Expiration Date (Leave blank if none)</label>
+            <input type="date" id="cert-expiry-date" class="form-control">
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="cert-credential-id" class="form-label">Credential ID</label>
+            <input type="text" id="cert-credential-id" class="form-control" placeholder="e.g. META-FED-884912">
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="cert-verify-url" class="form-label">Verification URL</label>
+            <input type="url" id="cert-verify-url" class="form-control" placeholder="https://coursera.org/verify/...">
+            <span class="form-hint-error" id="err-cert-verify-url"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="modal-cert">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-cert">Save Certification</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Achievement Modal (Add / Edit) -->
+  <div class="modal-backdrop" id="modal-achievement" role="dialog" aria-modal="true" aria-labelledby="modal-achievement-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-achievement-title">Add Achievement / Extracurricular</h3>
+        <button class="modal-close-btn" data-close-modal="modal-achievement" aria-label="Close">✕</button>
+      </div>
+      <form id="form-achievement">
+        <input type="hidden" id="achieve-edit-id">
+        <div class="modal-body form-grid">
+          <div class="form-group col-span-12">
+            <label for="achieve-title" class="form-label required">Title / Honor</label>
+            <input type="text" id="achieve-title" class="form-control" placeholder="e.g. 1st Place Winner - HackGenesis National Hackathon" required>
+            <span class="form-hint-error" id="err-achieve-title"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="achieve-category" class="form-label required">Category</label>
+            <select id="achieve-category" class="form-control" required>
+              <option value="Hackathons">Hackathons & Coding</option>
+              <option value="Academic Awards">Academic Awards</option>
+              <option value="Leadership">Leadership Roles</option>
+              <option value="Workshops">Workshops & Seminars</option>
+              <option value="Sports">Sports Achievements</option>
+              <option value="Volunteering">Volunteering & Community</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="achieve-date" class="form-label required">Date of Achievement</label>
+            <input type="date" id="achieve-date" class="form-control" required>
+            <span class="form-hint-error" id="err-achieve-date"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="achieve-desc" class="form-label required">Description of Accomplishment</label>
+            <textarea id="achieve-desc" class="form-control" rows="3" placeholder="Describe the competition, scale, your specific contributions, and the recognition received..." required></textarea>
+            <span class="form-hint-error" id="err-achieve-desc"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="achieve-proof" class="form-label">Proof / Verification Link (Optional)</label>
+            <input type="url" id="achieve-proof" class="form-control" placeholder="https://devpost.com/submission/...">
+            <span class="form-hint-error" id="err-achieve-proof"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="modal-achievement">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-achievement">Save Achievement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Internship Modal (Add / Edit) -->
+  <div class="modal-backdrop" id="modal-internship" role="dialog" aria-modal="true" aria-labelledby="modal-internship-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-internship-title">Add Internship Experience</h3>
+        <button class="modal-close-btn" data-close-modal="modal-internship" aria-label="Close">✕</button>
+      </div>
+      <form id="form-internship">
+        <input type="hidden" id="intern-edit-id">
+        <div class="modal-body form-grid">
+          <div class="form-group col-span-6">
+            <label for="intern-company" class="form-label required">Company / Organization</label>
+            <input type="text" id="intern-company" class="form-control" placeholder="e.g. NovaSphere Tech Solutions" required>
+            <span class="form-hint-error" id="err-intern-company"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="intern-role" class="form-label required">Internship Role / Job Title</label>
+            <input type="text" id="intern-role" class="form-control" placeholder="e.g. Frontend Engineering Intern" required>
+            <span class="form-hint-error" id="err-intern-role"></span>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="intern-start-date" class="form-label required">Start Date</label>
+            <input type="date" id="intern-start-date" class="form-control" required>
+          </div>
+
+          <div class="form-group col-span-6">
+            <label for="intern-end-date" class="form-label">End Date (Leave blank if Current)</label>
+            <input type="date" id="intern-end-date" class="form-control">
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="intern-desc" class="form-label required">Responsibilities & Achievements</label>
+            <textarea id="intern-desc" class="form-control" rows="3" placeholder="Highlight key tasks, optimizations delivered, and engineering methodologies used..." required></textarea>
+            <span class="form-hint-error" id="err-intern-desc"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="intern-skills" class="form-label required">Skills Learned / Applied (comma separated)</label>
+            <input type="text" id="intern-skills" class="form-control" placeholder="e.g. JavaScript ES6+, CSS Grid, Web Accessibility, Git" required>
+            <span class="form-hint-error" id="err-intern-skills"></span>
+          </div>
+
+          <div class="form-group col-span-12">
+            <label for="intern-proof" class="form-label">Offer / Certificate / Verification Link (Optional)</label>
+            <input type="url" id="intern-proof" class="form-control" placeholder="https://company.com/verify-internship/...">
+            <span class="form-hint-error" id="err-intern-proof"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="modal-internship">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-internship">Save Internship</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Reusable Confirmation Dialog Modal -->
+  <div class="modal-backdrop" id="modal-confirm" role="dialog" aria-modal="true" aria-labelledby="confirm-dialog-title">
+    <div class="modal-dialog modal-dialog-sm">
+      <div class="modal-header">
+        <h3 class="modal-title" id="confirm-dialog-title">Confirm Action</h3>
+        <button class="modal-close-btn" data-close-modal="modal-confirm" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="confirm-icon-wrap" id="confirm-dialog-icon">⚠️</div>
+        <p class="confirm-dialog-text" id="confirm-dialog-msg">Are you sure you want to proceed?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal="modal-confirm" id="confirm-dialog-cancel">Cancel</button>
+        <button type="button" class="btn btn-danger" id="confirm-dialog-ok">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       4. TOAST NOTIFICATIONS CONTAINER
+       ========================================================================= -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
